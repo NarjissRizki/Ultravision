@@ -7,6 +7,7 @@
 
 body {
   /* Default font family and font color */
+  font-family: 'Poppins', sans-serif;
 }
 
 p, li, textarea, label, input, select {
@@ -16,22 +17,91 @@ p, li, textarea, label, input, select {
 
 
 h1 {
+  font-size: 88px;
+  text-align: center;
+  background-color: #fcce00;
+  color: #ffffff;
+  background-position-x: 0px;
+  background-position-y: 8;
+  opacity: 81%;
+  margin: 8px 0;
+  
    /* Default font, size, and margins */
 }
 
 h2 {
+  font-size: 38px;
+  text-align: center;
+  background-color: #ff6b00;
+  color: #ffffff;
+  background-position-x: 0px;
+  background-position-y: 144px;
+  opacity: 81%;
+  margin: 8px 0;
   /* Default font, size, and margins */
 }
 
+.bannièrerouge {
+  background-color: #e02020;
+  margin:8px 0;
+  height: 32px;
+  opacity: 81%;
+}
+.bannièreviolette {
+  background-color: #b620e0;
+  margin:8px 0;
+  height: 16px;
+  opacity: 81%; 
+}
+.bannièrebleue {
+  background-color: #6236ff;
+  margin:8px 0 0;
+  height: 8px;
+  opacity: 81%;
+}
 h3 {
+ font-size: 40px;
+ text-align: center;
+ font-family: Poppins;
+ color: #231f20;
+ background-position-x: center;
+ background-position-y: center;
+ margin: 64px 0;
   /* Default font, size, and margins */
 }
-
 h4 {
+  font-size: 18px;
+  text-align: left;
+  font-family: Poppins;
+  color: #231f20;
+  margin-left: 48px;
+  margin-right: 33px;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    size: 16px;
+    text-align: justify;
+    color: #231f20;
+    width: 640px;
+    height: 345px;
+    margin-left: 48px;
+    margin-right: 32px;
+}
+
+.ordi-1 {
+width: 487px;
+height: 471px;
+}
+
+}
+h4 {
+
   /* Default font, size, and margins */
 }
 
 h5 {
+ 
   /* Default font, size, and margins */
 }
 
