@@ -69,40 +69,49 @@ h3 {
  margin: 64px 0;
   /* Default font, size, and margins */
 }
-h4 {
-  font-size: 18px;
-  text-align: left;
-  font-family: Poppins;
-  color: #231f20;
+.bloc1 {
+  display: flex;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bloc1-content,
+.bloc1-ordi {
+  flex-basis: 320px;
+  flex-grow: 1;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bloc1-titre{
+  font-size: 24px;
+  font-weight: 700;
+}
+.bloc1-contenu{
+font-size: 16px;
+text-align: left;
+}
+.bloc2 {
+  display: ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 16px;
+  text-align: justify;
   margin-left: 48px;
-  margin-right: 33px;
+  margin-right: 32px;
 }
-.wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    size: 16px;
-    text-align: justify;
-    color: #231f20;
-    width: 640px;
-    height: 345px;
-    margin-left: 48px;
-    margin-right: 32px;
+.bloc2 > div {
+  width: 50%;
+  padding: 10px;
 }
-
-.ordi-1 {
-width: 487px;
-height: 471px;
-}
-
-}
-h4 {
-
-  /* Default font, size, and margins */
-}
-
+.bloc2 > div:first-child {
+  margin-right: 20px;
 h5 {
- 
+  font-weight:normal;
   /* Default font, size, and margins */
+}
+.ordi-2 {
+  width: 487px;
+  height: 471px;  
 }
 
 h6 {
