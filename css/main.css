@@ -116,6 +116,10 @@ margin: 65px 47px 32px 32px;
   padding: 10px 36px;
   white-space:nowrap;
   background-color: #ffffff;
+ }
+.CTA-1:hover{
+  color: black;
+  background-color: #ff6b0073;
 }
 .CTA-2 {
   display: block;
@@ -130,6 +134,10 @@ margin: 65px 47px 32px 32px;
   margin: 30px 31px 22px 455px;
   padding: 10px 36px;
   background-color: #ffffff;
+}
+.CTA-2:hover{
+  color: black;
+  background-color:#fcce0087;
 }
 .bloc-ordi1,
 .bloc-ordi {
@@ -152,25 +160,23 @@ display: flex;
 }
 .bloc-ordi_orange {
   background-image: url(../img/bg-orange.png);
- }
+}
 
-.flexbox-container {​​​​​​​​​​
-  display: -ms-flex;
-  display: -webkit-flex;
+.flexbox-container {
   display: flex;
-}​​​​​
+}
 
-.flexbox-container > div {​​​​​
+.flexbox-container > div {
   width: 50%;
   padding: 10px;
-}​​​​​
+}
 
-.flexbox-container > div:first-child {​​​​​
-  margin-right: 20px;
-}​​​​​
+.flexbox-container > div:first-child {
+margin-right: 20px;
+}
 
 .feature-1 {
-background-image: url(../img/bg-red.png); /* re dl le red ?*/
+background-image: url(../img/bg-red.png);
 background-repeat: repeat;
 background-size: contain;
 mix-blend-mode: darken;
@@ -189,14 +195,14 @@ background-repeat: repeat;
 background-size: contain;
 mix-blend-mode: darken;
 }
-​​​​​
+
 .bloc-content {
 margin-right: 32px;
 margin-left: 32px;
 }
-​​​​​
-.soustitre3 { /*ne s'applique pas aux textes*/
-margin: 0 0 32px 32px;
+
+.soustitre3 {
+margin: 0 0 32px 0;
 font-family: Poppins;
 font-size: 32px;
 font-weight: bold;
@@ -235,12 +241,82 @@ background-color: black;
   margin-right: 4em;
   grid-column: span 3; /* trois cellules (cases) horizontales */
   grid-row: span 2; /* et deux verticales */
+}
+
+@media screen and (max-width: 1000px){
+  .flexbox-vignettes {
+  grid-template-columns: 1fr 1fr 1fr;
   }
-.releases-title {
+  }
+
+@media screen and (max-width: 700px){
+.flexbox-vignettes {
+grid-template-columns: 1fr 1fr;
+}
+}
+
+.releases-title{
+  color: white;
+  margin: 0 211.5px 64px 208.5px;
+  padding-top: 1em;  
+}
+
+.game {
+  position: relative;
+  max-width: 320px;
+  margin: auto;
+  color: #ffffff;
+}
+
+.game-cover {
+  display: block;
+}
+
+.game-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,.81);
+  border-radius: 15px;
+  font-size: 16px;
+  text-align: center;
+  padding: 16px;
+}
+
+.game-title1 {
+  font-size: 32px;
+  color: #fcce00;
+  font-weight: bold;
+}
+
+.game-title2 {
+  font-size: 32px;
+  color: #ff6b00;
+  font-weight: bold;
+}
+
+.game:hover .game-content {
+  transform: translateY(-10px);
+  opacity: 1;
+}
+
+.Contact {
   color: white;
   margin: 0 211.5px 64px 208.5px;
   padding-top: 1em;
 }
+
+.form-row {
+ margin: 0 211.5px 64px 208.5px;
+ font-family: Poppins;
+ font-size: 40px;
+ font-weight: 900;
+ text-align: center;
+ color: white;
+ padding-top: 1em;
+}
+
 h6 {
   /* Default font, size, and margins */
 }
