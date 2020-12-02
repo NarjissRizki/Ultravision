@@ -120,6 +120,7 @@ margin: 65px 47px 32px 32px;
 .CTA-1:hover{
   color: black;
   background-color: #ff6b0073;
+  transform: scale(1.1);
 }
 .CTA-2 {
   display: block;
@@ -138,6 +139,7 @@ margin: 65px 47px 32px 32px;
 .CTA-2:hover{
   color: black;
   background-color:#fcce0087;
+  transform: scale(1.1);
 }
 .bloc-ordi1,
 .bloc-ordi {
@@ -228,6 +230,12 @@ float: left;
 color: #ffffff;
 }
 
+.CTA-3:hover {
+  transform: scale(1.1);
+  color: yellow;
+  background-color: #231f20;
+}
+
 .fond-noir {
 background-color: black;
 }
@@ -314,18 +322,27 @@ opacity: 0.81;
 
 .Contact {
   color: white;
-  margin: 0 211.5px 64px 208.5px;
+  /*margin: 0 211.5px 64px 208.5px;*/
   padding-top: 1em;
 }
 
 .form-row {
- margin: 0 211.5px 64px 208.5px;
  font-family: Poppins;
- font-size: 40px;
+ font-size: 15px;
+ line-height: 2.5;
  font-weight: 900;
  text-align: center;
  color: white;
- padding-top: 1em;
+ padding-bottom: 2em;
+}
+
+.form-contact {
+display: flex;
+}
+
+.form-colonne{
+margin-left: 100px;
+padding-left: 100px;
 }
 
 h6 {
