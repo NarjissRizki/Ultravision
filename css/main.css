@@ -282,6 +282,22 @@ grid-template-columns: 1fr 1fr;
   font-size: 16px;
   text-align: center;
   padding: 16px;
+  opacity: 0;
+  transition: opacity 200ms;
+}
+
+.game-content:hover {
+opacity: 0.81;
+}
+
+.game-content > * {
+  transform: translateY(30px);
+  transition: transform 200ms;
+}
+
+.game:hover.game-content {
+  transform: translateY(-10px);
+  opacity: 1;
 }
 
 .game-title1 {
@@ -294,11 +310,6 @@ grid-template-columns: 1fr 1fr;
   font-size: 32px;
   color: #ff6b00;
   font-weight: bold;
-}
-
-.game:hover .game-content {
-  transform: translateY(-10px);
-  opacity: 1;
 }
 
 .Contact {
